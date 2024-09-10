@@ -69,7 +69,7 @@ public class Participante {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(atividades, email, id, nome);
+		return Objects.hash(id);
 	}
 
 	@Override
@@ -81,8 +81,7 @@ public class Participante {
 		if (getClass() != obj.getClass())
 			return false;
 		Participante other = (Participante) obj;
-		return Objects.equals(atividades, other.atividades) && Objects.equals(email, other.email)
-				&& Objects.equals(id, other.id) && Objects.equals(nome, other.nome);
+		return Objects.equals(id, other.id);
 	}
 
 	
